@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo</title>
+    <!-- ======================
+    favicon link 
+    ======================= -->
+    <link rel="shortcut icon" href="Icon/favicon.png" type="image/x-icon">
+    <!-- ==============
+    link with bootstrap 
+    ================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- =================
+    link with font awesome 
+    ===================== -->
+    <script src="https://kit.fontawesome.com/90f9ae3511.js" crossorigin="anonymous"></script>
+    <!-- ================
+    link with external css 
+    ================== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- ===================
+         1st navbar part 
+        ==================== -->
+        <section class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+                <div class="container m-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="Icon/logo.png" alt="" width="138" height="100" class="d-inline-block align-text-top">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active ms-3" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active ms-3" href="#destination">Destination</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle active ms-3" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item ms-3" href="#">Destination details</a></li>
+                                    <li><a class="dropdown-item ms-3" href="#">Elements</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle active ms-3" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Single-Blog</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active ms-3" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="fs-3  navbar-nav ms-auto me-4 mb-2 mb-lg-0 d-flex">
+                            <li class="nav-item">
+                                <a href=""><i class="fab fa-facebook text-secondary"></i></a>
+                                <a href=""><i class="fab fa-instagram-square text-secondary"></i></a>
+                                <a href=""><i class="fab fa-linkedin text-secondary"></i></a>
+                                <a href=""><i class="fab fa-youtube-square text-secondary"></i></a>
+                            </li>
+                        </ul>
+                        <!-- ==================
+                        modal part 
+                        ===================== -->
+
+                        <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
+                            <li class="nav-item">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Search
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade " id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body d-flex">
+                                                <input class=" w-100" type="search" name="" id=""
+                                                    placeholder="Search Here">
+                                                <button type="button" class="btn btn-danger">Search</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- =====================
+        carousel part 
+        ======================== -->
+        <section class="container-fluid p-0">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="First-part/France.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-sm-block d-md-block carousel-text">
+                            <h5>France</h5>
+                            <p>Pexel perfect design with awesome content</p>
+                            <a href="#"><button class="btn btn-success btn-lg">Explore Now</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="First-part/Indonesia.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-sm-block d-md-block carousel-text">
+                            <h5>Indonesia</h5>
+                            <p>Pexel perfect design with awesome content</p>
+                            <a href="#"><button class="btn btn-success btn-lg">Explore Now</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="First-part/Switzerland.jpg" class="d-block w-100" alt=" ...">
+                        <div class="carousel-caption d-sm-block d-md-block carousel-text">
+                            <h5>Switzerland</h5>
+                            <p>Pexel perfect design with awesome content</p>
+                            <a href="#"><button class="btn btn-success btn-lg">Explore Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- =================
+        2nd navbar part
+        ================= -->
+        <section class="container-fluid bg-dark p-0">
+            <div class="container pb-5">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+                    <div class="container text-white text-center justify-content-center p-0">
+                        <div class="row align-items-center w-100">
+                            <div class="col-lg-3 col-sm-12 w-100">
+                                <h3 class="text-white m-5 text-nowrap">Where you want to go?</h3>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-md-3">
+                                <input class="bg-dark text-white border border-white p-2 form-control" type="text"
+                                    name="" id="" placeholder="Where to go?">
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-md-3">
+                                <input class="bg-dark text-white border border-white p-2  form-control" type="date"
+                                    name="" id="Date">
+                            </div>
+                            <div class="col-lg-3 col-sm-12 col-md-3 ">
+                                <div class="dropdown ">
+                                    <button class="btn btn-dark dropdown-toggle border border-white p-2 form-control"
+                                        type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Travel type
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+
+                                        <li><a class="dropdown-item" href="#">Some option</a></li>
+                                        <li><a class="dropdown-item" href="#">Another option</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-danger p-2  form-control">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+    <main>
+        <!-- ================
+        Destination part 
+        ==================== -->
+        <section class="container text-center w-100 pt-5 mt-5" id="destination">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="font-monospace">Popular Destination</h1>
+                    <p class="font-monospace">Suffered alteration in some form, by injected humour or good day
+                        randomised
+                        booth anim 8-bit hella wolf moon beard words.</p>
+                </div>
+            </div>
+            <!-- =========
+                            cards 
+                            ======== -->
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-white w-100">
+                        <img src="Second-part/america.jpg" style="height: 265px;" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="pt-5 mt-5">
+                            <h3 class="card-title pt-5 text-white">America</h3>
+                            <a href=""><button class="text-white bg-success border-0 rounded-pill p-2">7
+                                    places</button></a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-white w-100">
+                        <img src="Second-part/dubai.jpg" style="height: 265px;" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="pt-5 mt-5">
+                            <h3 class="card-title pt-5 text-white">Dubai</h3>
+                            <a href=""><button class="text-white bg-success border-0 rounded-pill p-2">10
+                                    places</button></a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-white w-100">
+                        <img src="Second-part/brasil.jpg" style="height: 265px;" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="pt-5 mt-5">
+                            <h3 class="card-title pt-5 text-white">Brasil</h3>
+                            <a href=""><button class="text-white bg-success border-0 rounded-pill p-2">3
+                                    places</button></a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-white w-100">
+                        <img src="Second-part/italy.jpg" style="height: 265px;" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="pt-5 mt-5">
+                            <h3 class="card-title pt-5 text-white">Italy</h3>
+                            <a href=""><button class="text-white bg-success border-0 rounded-pill p-2">2
+                                    places</button></a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-white w-100">
+                        <img src="Second-part/maldives.jpg" style="height: 265px;" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="pt-5 mt-5">
+                            <h3 class="card-title pt-5 text-white">Maldives</h3>
+                            <a href=""><button class="text-white bg-success border-0 rounded-pill p-2">5
+                                    places</button></a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-dark text-white w-100">
+                        <img src="Second-part/napal.jpg" style="height: 265px;" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="pt-5 mt-5">
+                            <h3 class="card-title pt-5 text-white">Nepal</h3>
+                            <a href=""><button class="text-white bg-success border-0 rounded-pill p-2">2
+                                    places</button></a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- ===============
+        Subscribe part 
+        =============== -->
+        <section class="container-fluid pt-5 mt-5 px-0">
+            <div class="card bg-dark text-white w-100">
+                <img src="Third-part/extra.jpg" class="card-img img-fluid" style="height: 290px;" alt="...">
+                <div class="card-img-overlay d-flex align-items-center flex-column p-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-white">
+                        <h2>Subscribe Our Newsletter</h2>
+                        <p>Subscribe newsletter to get offers and about new places to discover.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 form">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
+                        <div>
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Your Email">
+
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-danger ">Subscribe</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- =======================
+        Popular place part
+        ========================= -->
+        <section class="container text-center w-auto pt-5 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="font-monospace">Popular Places</h1>
+                    <p class="font-monospace">Suffered alteration in some form, by injected humour or good day
+                        randomised
+                        booth anim 8-bit hella wolf moon beard words.</p>
+                </div>
+            </div>
+
+            <!-- ================
+            cards part
+            ================ -->
+            <div class="row gy-4">
+                <div class="col-lg-4 shadow">
+                    <div class="card border-0">
+                        <img src="Fourth-part/miami.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Miami</h5>
+                            <p class="card-text">United States Of America</p>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <small class="text-muted">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </small>
+                                <small class="text-muted">
+                                    <i class="far fa-clock">5 days</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 shadow">
+                    <div class="card border-0">
+                        <img src="Fourth-part/florida.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Florioda</h5>
+                            <p class="card-text">United States Of America</p>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <small class="text-muted">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </small>
+                                <small class="text-muted">
+                                    <i class="far fa-clock">5 days</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 shadow">
+                    <div class="card border-0">
+                        <img src="Fourth-part/san fransisco.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">San Fransisco</h5>
+                            <p class="card-text">United States Of America</p>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <small class="text-muted">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </small>
+                                <small class="text-muted">
+                                    <i class="far fa-clock">5 days</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 shadow ">
+                    <div class="card border-0">
+                        <img src="Fourth-part/saudi arabia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Riyadh</h5>
+                            <p class="card-text">Kingdom Of Saudi Arabia</p>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <small class="text-muted">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </small>
+                                <small class="text-muted">
+                                    <i class="far fa-clock">5 days</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 shadow ">
+                    <div class="card border-0">
+                        <img src="Fourth-part/singapore.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Changi Airport</h5>
+                            <p class="card-text">Singapore</p>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <small class="text-muted">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </small>
+                                <small class="text-muted">
+                                    <i class="far fa-clock">5 days</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 shadow ">
+                    <div class="card border-0">
+                        <img src="Fourth-part/turkey.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hagia Sofia</h5>
+                            <p class="card-text">Turkey</p>
+
+                            <div class="d-flex justify-content-between align-items-end">
+                                <small class="text-muted">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </small>
+                                <small class="text-muted">
+                                    <i class="far fa-clock">5 days</i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="submit" class="btn btn-danger mt-5 px-5 py-3">More Places</button>
+            </div>
+        </section>
+        <!-- ====================
+        Video part 
+        ====================== -->
+        <section class="container-fluid p-0 mt-5 pt-5">
+            <div class="video">
+                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/f7hbWvHKns0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- ======================
+        Icon part 
+        ==================== -->
+        <section class="container pt-5 mt-5">
+            <div class="row gx-3 gy-3">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <span>
+                        <i class="fas fa-subway fs-1 text-danger"></i>
+                    </span>
+                    <h3>Comfortable Journey</h3>
+                    <p>A wonderful serenity has taken to the possession of my entire soul.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <span>
+                        <i class="fas fa-hotel fs-1 text-danger"></i>
+                    </span>
+                    <h3>Luxuries Hotel</h3>
+                    <p>A wonderful serenity has taken to the possession of my entire soul.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <span>
+                        <i class="fas fa-globe-europe fs-1  text-danger"></i>
+                    </span>
+                    <h3>Travel Guide</h3>
+                    <p>A wonderful serenity has taken to the possession of my entire soul.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- =================
+        Trips part 
+        ================== -->
+        <section class="container pt-5 mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <h1 class="font-monospace text-center">Recent Trips</h1>
+
+                </div>
+            </div>
+
+            <!-- ===============
+            More cards 
+            ================ -->
+            <div class="row gy-5  mt-3 ">
+                <div class="col-lg-4 col-md-6">
+                    <img src="Fifth-part/pic-1.jpg" class="rounded w-100" alt="...">
+                    <div class="card-text bg-none">
+                        <small>Oct 12, 2020</small>
+                        <h4>Journeys Are Best Measured In New Friends</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="Fifth-part/pic-2.jpg" class="rounded w-100" alt="...">
+                    <div class="card-text bg-none">
+                        <small>Oct 12, 2020</small>
+                        <h4>Journeys Are Best Measured In New Friends</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="Fifth-part/pic-3.jpg" class="rounded w-100" alt="...">
+                    <div class="card-text bg-none">
+                        <small>Oct 12, 2020</small>
+                        <h4>Journeys Are Best Measured In New Friends</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="about">
+        <section class="container">
+            <div class="row text-white p-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="Icon/logo.png" style="width: 138px; height: 100px;" alt="">
+                    <p class="text-white-50">5th flora, 700/D kings road, green
+                        lane New York-1782
+                        +10 367 826 2567
+                        contact@carpenter.com</p>
+                    <p class="d-flex justify-content-evenly fs-5">
+                        <a href=""><i class="fab fa-facebook text-secondary"></i></a>
+                        <a href=""><i class="fab fa-instagram-square text-secondary"></i></a>
+                        <a href=""><i class="fab fa-linkedin text-secondary"></i></a>
+                        <a href=""><i class="fab fa-youtube-square text-secondary"></i></a>
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4>Company</h4>
+                    <span>
+                        <p><a href="#" class="text-white-50 text-decoration-none">Pricing</a></p>
+                        <p><a href="#" class="text-white-50 text-decoration-none">About</a></p>
+                        <p><a href="#" class="text-white-50 text-decoration-none">Gallery</a></p>
+                        <p><a href="#" class="text-white-50 text-decoration-none">Contact</a></p>
+                    </span>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4>Popular Destination</h4>
+                    <div class="d-flex">
+                        <span class="col-lg-6">
+                            <p><a href="#" class="text-white-50 text-decoration-none">Indonesia</a></p>
+                            <p><a href="#" class="text-white-50 text-decoration-none">India</a></p>
+                            <p><a href="#" class="text-white-50 text-decoration-none">Franch</a></p>
+                            <p><a href="#" class="text-white-50 text-decoration-none">Italy</a></p>
+                        </span>
+                        <span class="col-lg-6">
+                            <p><a href="#" class="text-white-50 text-decoration-none">America</a></p>
+                            <p><a href="#" class="text-white-50 text-decoration-none">Switzerland</a></p>
+                            <p><a href="#" class="text-white-50 text-decoration-none">Canada</a></p>
+                            <p><a href="#" class="text-white-50 text-decoration-none">England</a></p>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4>Instagram</h4>
+                    <span class="col-lg-4 col-sm-6">
+                        <img src="Footer/pto-1.jpg" class="p-1" alt="">
+                    </span>
+                    <span class="col-lg-4 col-sm-6">
+                        <img src="Footer/pto-2.jpg" class="p-1" alt="">
+                    </span>
+                    <span class="col-lg-4 col-sm-6">
+                        <img src="Footer/pto-3.jpg" class="p-1" alt="">
+                    </span>
+                    <span class="col-lg-4 col-sm-6">
+                        <img src="Footer/pto-4.jpg" class="p-1" alt="">
+                    </span>
+                    <span class="col-lg-4 col-sm-6">
+                        <img src="Footer/pto-5.jpg" class="p-1" alt="">
+                    </span>
+                    <span class="col-lg-4 col-sm-6">
+                        <img src="Footer/pto-6.jpg" class="p-1" alt="">
+                    </span>
+                </div>
+            </div>
+        </section>
+        <hr class="text-white">
+        <p class="text-center mb-0 py-4"><small class="text-white-50 ">Copyright ©2021 All rights reserved | This
+                template is
+                made
+                with <i class="far fa-smile-wink"> by <span class="text-danger"> Chowdhury </span></i>
+            </small>
+        </p>
+    </footer>
+    <!-- ==============
+    link with javascript 
+    ================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
